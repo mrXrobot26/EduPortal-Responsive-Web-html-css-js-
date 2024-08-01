@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEV-ENV</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="nav-branding">Gates©</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="humburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="partenSlider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              src="../imgs/together.jpg"
+              class="slide-image"
+              alt="together"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="../imgs/libraryBase.jpg"
+              class="slide-image"
+              alt="libraryBase"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img src="../imgs/libaray2.jpg" class="slide-image" alt="libaray" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+    <section class="staff-section">
+      <div class="container">
+        <h2 class="staff-heading">Staff</h2>
+      </div>
+    </section>
+    
+    <section class="carCourseParent">
+      <div class="cards-container">
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins1.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Dr. Alan Turing</h3>
+            <p class="instructor-subject">Artificial Intelligence</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins2.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Prof. Ada Lovelace</h3>
+            <p class="instructor-subject">Algorithms and Data Structures</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins3.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Dr. Grace Hopper</h3>
+            <p class="instructor-subject">Compilers and Programming</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins5.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Prof. Donald Knuth</h3>
+            <p class="instructor-subject">The Art of Computer Programming</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins6.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Dr. Barbara Liskov</h3>
+            <p class="instructor-subject">Distributed Systems</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+        <div class="cardOfCourses">
+          <div class="instructor-container">
+            <img src="../imgs/ins7.jpg" alt="instructor" class="instructor" />
+          </div>
+          <div class="instructor-details">
+            <h3 class="instructor-name">Prof. John McCarthy</h3>
+            <p class="instructor-subject">Artificial Intelligence Foundations</p>
+            <a href="enroll.html" class="enroll-button">Enroll</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script src="/js/script.js"></script>
+    <script src="/js/slider.js"></script>
+  </body>
+</html>

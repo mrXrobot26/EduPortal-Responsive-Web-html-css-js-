@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Enrollment</title>
+    <link rel="stylesheet" href="../css/enroll.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="nav-branding">Gates©</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="humburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <main>
+
+
+    <main>
+        <h1>Subject Enrollment</h1>
+        
+        <form id="enrollmentForm">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" required><br>
+          <label for="subjectName">Subject Name:</label>
+          <select id="subjectName" required>
+              <option value="Artificial Intelligence">Artificial Intelligence</option>
+              <option value="Algorithms and Data Structures">Algorithms and Data Structures</option>
+              <option value="Compilers and Programming">Compilers and Programming</option>
+              <option value="The Art of Computer Programming">The Art of Computer Programming</option>
+              <option value="Distributed Systems">Distributed Systems</option>
+              <option value="Artificial Intelligence Foundations">Artificial Intelligence Foundations</option>
+          </select><br>
+          <label for="courseDuration">Course Duration (weeks):</label>
+          <input type="number" id="courseDuration" required><br>
+          <button type="button" onclick="addEnrollment()">Enroll</button>
+      </form>
+
+        <h2>Enrolled Subjects</h2>
+        <div class="controls">
+            <div class="select-wrapper">
+                <label for="sortCriteria">Sort by:</label>
+                <select id="sortCriteria" onchange="sortEnrollments()">
+                    <option value="studentName">Student Name</option>
+                    <option value="subjectName">Subject Name</option>
+                </select>
+            </div>
+
+            <div class="select-wrapper">
+                <label for="filterCriteria">Filter by Duration:</label>
+                <select id="filterCriteria" onchange="filterEnrollments()">
+                    <option value="all">All</option>
+                    <option value="greaterThan8">Greater than 8 weeks</option>
+                    <option value="lessThanOrEqual8">Less than or equal 8 weeks</option>
+                </select>
+            </div>
+        </div>
+
+        <table id="enrollmentTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Subject Name</th>
+                    <th>Duration (weeks)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="enrollmentList"></tbody>
+        </table>
+    </main>
+
+    <script src="../js/enroll.js"></script>
+</body>
+</html>

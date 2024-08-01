@@ -1,0 +1,73 @@
+/* Contact Page Styles */
+.contact {
+    padding: 60px 0;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-primary); /* Primary color for header text */
+}
+
+.contact-info p {
+    font-size: 1.6em;
+    color: var(--color-primary); /* Primary color for paragraph text */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-secondary-text);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-primary); /* Primary color for form header text */
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: var(--color-primary); /* Primary color for label text */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid var(--color-secondary-text);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    font-size: 1.1em;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--color-secondary);
+}
